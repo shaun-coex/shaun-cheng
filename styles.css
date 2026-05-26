@@ -206,9 +206,9 @@ p {
 h1 {
   max-width: 850px;
   margin-bottom: 24px;
-  font-size: clamp(3.1rem, 8vw, 6.9rem);
-  line-height: 0.9;
-  letter-spacing: -0.085em;
+  font-size: clamp(2.75rem, 6.6vw, 5.8rem);
+  line-height: 0.94;
+  letter-spacing: -0.075em;
 }
 
 h2 {
@@ -327,13 +327,12 @@ p {
   box-shadow: 0 0 80px rgba(96, 165, 250, 0.24);
 }
 
-.profile-orb span {
-  font-family: "JetBrains Mono", monospace;
-  font-size: 3.2rem;
-  font-weight: 900;
-  background: linear-gradient(135deg, var(--cyan), var(--violet));
-  -webkit-text-fill-color: transparent;
-  background-clip: text;
+.profile-orb img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center 18%;
+  border-radius: inherit;
 }
 
 .hero-tech {
@@ -494,6 +493,19 @@ p {
   border-radius: var(--radius-lg);
 }
 
+.timeline-item ul {
+  display: grid;
+  gap: 12px;
+  padding-left: 20px;
+  margin: 0;
+  color: var(--muted);
+  line-height: 1.65;
+}
+
+.timeline-item li::marker {
+  color: var(--cyan);
+}
+
 .expertise-band {
   padding-top: 40px;
   padding-bottom: 40px;
@@ -634,7 +646,7 @@ p {
   }
 
   h1 {
-    font-size: clamp(2.75rem, 15vw, 4.3rem);
+    font-size: clamp(2.35rem, 12vw, 3.55rem);
   }
 
   .metrics,
